@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(82, 24, 113);
+  background: radial-gradient(
+    circle,
+    rgba(82, 24, 113, 1) 9%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  font-family: 'Rubik', serif;
+}
+
+h1,
+h2,
+h3,
+a {
+  font-family: 'Rubik', serif;
+}
