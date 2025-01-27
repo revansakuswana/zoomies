@@ -36,8 +36,8 @@ export const App = () => (
     </header>
 
     {/* Section 1 */}
-    <div className="relative flex flex-col items-center justify-center w-full">
-      <div className="py-10">
+    <div className="relative flex flex-col items-center justify-center w-full py-10">
+      <div className="pb-10">
         <div className="justify-items-center mb-10">
           <img
             className="w-2/4 md:w-48"
