@@ -11,13 +11,14 @@ html {
 }
 
 body {
+  font-family: 'Rubik', serif;
   background: rgb(82, 24, 113);
   background: radial-gradient(
     circle,
     rgba(82, 24, 113, 1) 9%,
     rgba(2, 0, 36, 1) 100%
   );
-  font-family: 'Rubik', serif;
+  color: white;
 }
 
 h1,
