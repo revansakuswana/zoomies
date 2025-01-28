@@ -69,7 +69,7 @@ export const App = () => (
         Earn With Your On-Chain Activity on Radix
       </h1>
       <div className="justify-items-center mt-5">
-        <img className="w-1/5 md:w-2/5" src={earn} alt="Earn logo" />
+        <img className="w-3/5 md:w-3/5" src={earn} alt="Earn logo" />
       </div>
     </div>
 
