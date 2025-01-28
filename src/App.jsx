@@ -1,4 +1,14 @@
 import '@/App.css';
+import logo from '@/assets/images/ogverse.png';
+import earn from '@/assets/images/earn.gif';
+import convert from '@/assets/images/convert.gif';
+import games from '@/assets/images/games.gif';
+import leaderboard from '@/assets/images/leaderboard.gif';
+import checkout from '@/assets/images/check-out.png';
+import swap from '@/assets/images/swap.png';
+import staking from '@/assets/images/staking.png';
+import send from '@/assets/images/send.png';
+import wallet from '@/assets/images/wallet.png';
 
 export const App = () => (
   <div className="flex flex-col items-center justify-center px-10 md:px-40">
@@ -39,11 +49,7 @@ export const App = () => (
     <div className="relative flex flex-col items-center justify-center w-full py-10">
       <div className="pb-10">
         <div className="justify-items-center mb-10">
-          <img
-            className="w-2/4 md:w-48"
-            src="./ogverse.png"
-            alt="ogverse Logo"
-          />
+          <img className="w-2/4 md:w-48" src={logo} alt="ogverse Logo" />
         </div>
         <h1 className="text-3xl md:text-5xl font-medium text-center">
           Boost Your Radix Experience, Earn $OG
@@ -63,11 +69,7 @@ export const App = () => (
         Earn With Your On-Chain Activity on Radix
       </h1>
       <div className="justify-items-center mt-5">
-        <img
-          className="w-1/5 md:w-2/5"
-          src="./money-saving.png"
-          alt="Earn logo"
-        />
+        <img className="w-1/5 md:w-2/5" src={earn} alt="Earn logo" />
       </div>
     </div>
 
@@ -76,34 +78,31 @@ export const App = () => (
       <h1 className="text-3xl md:text-5xl font-medium text-center">
         How It&apos;s Work
       </h1>
-      <div className="flex items-center justify-center mt-5">
-        <img className="w-10 mr-2" src="./money-saving.png" alt="Earn logo" />
-        <h1 className="text-xl  font-normal text-center">Earn Points For</h1>
-      </div>
+      <h1 className="text-xl  font-normal text-center">Earn Points For</h1>
       <div className="w-full mt-10 gap-10 flex flex-wrap items-center justify-center">
         <img
           className="w-20 md:w-32 grayscale hover:grayscale-0 hover:-translate-y-2 transition duration-700"
-          src="./switch.png"
+          src={swap}
           alt="swap logo"
         />
         <img
           className="w-20 md:w-32 grayscale hover:grayscale-0 hover:-translate-y-2 transition duration-700"
-          src="./security.png"
+          src={staking}
           alt="staking logo"
         />
         <img
           className="w-20 md:w-32 grayscale hover:grayscale-0 hover:-translate-y-2 transition duration-700"
-          src="./shopping-cart.png"
-          alt="buying logo"
+          src={checkout}
+          alt="checkout logo"
         />
         <img
           className="w-20 md:w-32 grayscale hover:grayscale-0 hover:-translate-y-2 transition duration-700"
-          src="./money.png"
+          src={send}
           alt="send logo"
         />
         <img
           className="w-20 md:w-32 grayscale hover:grayscale-0 hover:-translate-y-2 transition duration-700"
-          src="./needy.png"
+          src={wallet}
           alt="wallet logo"
         />
       </div>
@@ -113,7 +112,7 @@ export const App = () => (
           <div className="relative flex w-80 h-80 flex-col rounded-xl bg-gradient-to-br from-white to-gray-50 bg-clip-border text-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
             <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border shadow-lg group">
               <div className="justify-items-center content-center absolute inset-0 bg-radial-purple-black">
-                <img className="w-32" src="./convert.png" alt="earn logo" />
+                <img className="w-32" src={convert} alt="earn logo" />
               </div>
             </div>
             <div className="p-6">
@@ -130,7 +129,7 @@ export const App = () => (
           <div className="relative flex w-80 h-80 flex-col rounded-xl bg-gradient-to-br from-white to-gray-50 bg-clip-border text-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
             <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border shadow-lg group">
               <div className="justify-items-center content-center absolute inset-0 bg-radial-purple-black">
-                <img className="w-32" src="./joystick.png" alt="games logo" />
+                <img className="w-32" src={games} alt="games logo" />
               </div>
             </div>
             <div className="p-6">
@@ -148,7 +147,7 @@ export const App = () => (
               <div className="justify-items-center content-center absolute inset-0 bg-radial-purple-black">
                 <img
                   className="w-32"
-                  src="./podium.png"
+                  src={leaderboard}
                   alt="leaderboard logo"
                 />
               </div>
