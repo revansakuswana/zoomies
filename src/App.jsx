@@ -34,7 +34,7 @@ export const App = () => (
             Telegram
           </a>
           <a
-            href="https://docs.ogverse.fun"
+            href="https://ogverse-docs.gitbook.io/ogverse-docs"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 cursor-pointer hover:text-white transition-all active:brightness-90 sm:text-xl"
@@ -221,7 +221,7 @@ export const App = () => (
 
           <li>
             <a
-              href="https://docs.ogverse.fun"
+              href="https://ogverse-docs.gitbook.io/ogverse-docs"
               className="hover:text-white transition-all active:brightness-90"
             >
               Docs
