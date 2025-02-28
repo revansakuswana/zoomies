@@ -11,9 +11,9 @@ import send from '@/assets/images/send.png';
 import wallet from '@/assets/images/wallet.png';
 
 export const App = () => (
-  <div className="flex flex-col items-center justify-center px-10 md:px-40">
+  <div className="flex flex-col items-center justify-center">
     {/* header */}
-    <header className="text-white py-8 justify-center">
+    <div className="w-full py-6 px-14 bg-white justify-center border-b-8 border-black">
       <div className="container mx-auto flex justify-center items-center">
         {/* Navigasi */}
         <nav className="space-x-8">
@@ -21,29 +21,29 @@ export const App = () => (
             href="https://x.com/OGverse_"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 cursor-pointer hover:text-white transition-all active:brightness-90 sm:text-xl"
+            className="text-black cursor-pointer sm:text-3xl hover-flip"
           >
-            X
+            About
           </a>
           <a
             href="https://t.me/ogversee"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 cursor-pointer hover:text-white transition-all active:brightness-90 sm:text-xl"
+            className="text-black cursor-pointer sm:text-3xl hover-flip"
           >
-            Telegram
+            Tokenomics
           </a>
           <a
             href="https://ogverse-docs.gitbook.io/ogverse-docs"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 cursor-pointer hover:text-white transition-all active:brightness-90 sm:text-xl"
+            className="text-black cursor-pointer sm:text-3xl hover-flip"
           >
-            Docs
+            Memes
           </a>
         </nav>
       </div>
-    </header>
+    </div>
 
     {/* Section 1 */}
     <div className="relative flex flex-col items-center justify-center w-full py-10">
