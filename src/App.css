@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=DM+Serif+Text:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Just+Me+Again+Down+Here&family=Righteous&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
   margin: 0;
@@ -11,9 +11,8 @@ html {
 }
 
 body {
-  font-family: 'Rubik', serif;
-  background: rgb(62, 20, 89);
-  background: radial-gradient(rgba(62, 20, 89, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  font-family: 'Just Me Again Down Here', serif;
+  background: #efefef;
   color: white;
 }
 
@@ -21,107 +20,13 @@ h1,
 h2,
 h3,
 a {
-  font-family: 'Rubik', serif;
+  font-family: 'Just Me Again Down Here', serif;
 }
 
-button {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  outline: none;
-  border: 0;
-  vertical-align: middle;
-  text-decoration: none;
-  background: transparent;
-  padding: 0;
-  font-size: inherit;
-  font-family: inherit;
+.hover-flip {
+  display: inline-block; /* Agar transformasi bekerja dengan baik */
 }
 
-button.launch-app {
-  width: 16rem;
-  height: auto;
-  text-align: center;
-}
-
-button.launch-app .circle {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: relative;
-  display: block;
-  margin: 0;
-  width: 3rem;
-  height: 3rem;
-  background: purple;
-  border-radius: 1.625rem;
-}
-
-button.launch-app .circle .icon {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: #fff;
-}
-
-button.launch-app .circle .icon.arrow {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  left: 0.625rem;
-  width: 1.125rem;
-  height: 0.125rem;
-  background: none;
-}
-
-button.launch-app .circle .icon.arrow::before {
-  position: absolute;
-  content: '';
-  top: -0.29rem;
-  right: 0.0625rem;
-  width: 0.625rem;
-  height: 0.625rem;
-  border-top: 0.125rem solid #fff;
-  border-right: 0.125rem solid #fff;
-  transform: rotate(45deg);
-}
-
-button.launch-app .button-text {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0.75rem 0;
-  margin: 0 0 0 1.85rem;
-  color: white;
-  font-weight: 700;
-  line-height: 1.6;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-button:hover .circle {
-  width: 100%;
-}
-
-button:hover .circle .icon.arrow {
-  background: #fff;
-  transform: translate(1rem, 0);
-}
-
-button:hover .button-text {
-  color: white;
-  content: attr(data-hover-text);
-  display: none;
-}
-
-button:hover::after {
-  content: 'Coming Soon';
-  position: absolute;
-  top: 50%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-weight: 700;
-  text-transform: uppercase;
+.hover-flip:hover {
+  transform: rotateY(180deg);
 }
