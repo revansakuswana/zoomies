@@ -6,7 +6,7 @@ import Switch from './components/Switch.jsx';
 import SectionRunning from './components/SectionRunning.jsx';
 
 const steps = [
-  'Go to <a https://t.me/zoomies_bot" class="text-red-500">https://access.redbelly.network/</a>',
+  'Go to <a class="text-red-500">https://t.me/zoomies_bot</a>',
   'Press /start to regist',
   'Type /help to see all commands',
   'Play games and check-in daily',
@@ -150,7 +150,7 @@ export const App = () => {
               </a>
 
               <a
-                href="https://t.me/radizoomie"
+                href="https://t.me/radixzoomies"
                 className="w-full flex flex-row gap-2 justify-center bg-[#51B5FF] relative text-black border border-black rounded-full text-4xl px-16 py-4 cursor-pointer -translate-x-0.5 shadow-[0px_4px_0_0_black] hover:-translate-y-2 hover:-translate-x-0.5 hover:shadow-[5px_15px_0_0_black] active:translate-y-0.5 active:translate-x-0.5 active:shadow-[0_0_0_0_black]"
               >
                 telegram
@@ -171,7 +171,7 @@ export const App = () => {
           {/* Kanan - Gambar Ular */}
           <div className="flex justify-center items-center">
             <img
-              src="https://cdn.prod.website-files.com/677b6e588dbcb5516a62ce62/67808f0768804bf83ab8e4ff_Untitled_Artwork%204%201.webp"
+              src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/3 finish.png"
               alt="SNEC Snake"
               className="w-[500px]"
             />
@@ -233,13 +233,13 @@ export const App = () => {
           </h1>
 
           {/* Container untuk gambar dan tombol */}
-          <div className="relative flex flex-row justify-between items-center mt-10 gap-6">
+          <div className="relative flex flex-row justify-between items-center mt-10">
             {/* Gambar Ular Kiri */}
             <div className="flex justify-center w-1/2 sm:w-auto">
               <img
-                src="https://cdn.prod.website-files.com/677b6e588dbcb5516a62ce62/67808f9896bac851af857c26_Group%2010%20(2)-p-500.webp"
+                src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/1finish.png"
                 alt="Snake Left"
-                className="w-48 sm:w-[1024px] max-w-full"
+                className="w-48 sm:w-[300px] max-w-full"
               />
             </div>
 
@@ -251,9 +251,9 @@ export const App = () => {
             {/* Gambar Ular Kanan */}
             <div className="flex justify-center w-1/2 sm:w-auto">
               <img
-                src="https://cdn.prod.website-files.com/677b6e588dbcb5516a62ce62/67808f9868804bf83ab96611_Group%209%20(2).webp"
+                src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/1finish.png"
                 alt="Snake Right"
-                className="w-48 sm:w-[1024px] max-w-full"
+                className="w-48 sm:w-[300px] max-w-full scale-x-[-1]"
               />
             </div>
           </div>
@@ -361,7 +361,7 @@ export const App = () => {
       <div>
         <p className="w-full text-center text-black text-3xl py-8">
           {'©'} &nbsp;
-          {new Date().getFullYear()} by SNEC. All Rights Reserved
+          {new Date().getFullYear()} by zoomies. All Rights Reserved
         </p>
       </div>
     </div>
