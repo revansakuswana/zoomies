@@ -207,7 +207,7 @@ export const App = () => {
       <div className="w-full flex items-center justify-center py-16 sm:py-24 px-5 sm:px-10">
         <div className="w-full flex flex-col max-w-7xl">
           {/* Teks di Atas */}
-          <h1 className="text-center text-black text-4xl md:text-5xl">
+          <h1 className="text-center text-black text-4xl sm:text-5xl">
             ZOOMIES Games
           </h1>
 
