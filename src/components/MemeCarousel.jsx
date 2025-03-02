@@ -10,29 +10,31 @@ import {
 
 const memes = [
   {
-    url: 'https://cdn.prod.website-files.com/677b6e588dbcb5516a62ce62/6784baec2034298542dfd291_snec%20djt.webp',
-    maxWidth: 300,
-    maxHeight: 300,
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.27.jpeg',
   },
   {
-    url: 'https://cdn.prod.website-files.com/677b6e588dbcb5516a62ce62/6784baecc71e1da0072531a7_drake.webp',
-    maxWidth: 300,
-    maxHeight: 300,
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28 (1).jpeg',
   },
   {
-    url: 'https://cdn.prod.website-files.com/677b6e588dbcb5516a62ce62/6784baec3453d674ed7440d3_snec%20pigeon.webp',
-    maxWidth: 300,
-    maxHeight: 300,
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28 (2).jpeg',
+    maxWidth: 325,
+    maxHeight: 380,
   },
   {
-    url: 'https://cdn.prod.website-files.com/677b6e588dbcb5516a62ce62/6784baeb0b1fd1a669ee4405_snec%20history%20channel.webp',
-    maxWidth: 300,
-    maxHeight: 300,
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28 (3).jpeg',
   },
   {
-    url: 'https://cdn.prod.website-files.com/677b6e588dbcb5516a62ce62/6784baec083c94590fd8cb31_snec%20nuke.webp',
-    width: 430,
-    height: 400,
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28.jpeg',
+    maxWidth: 325,
+    maxHeight: 380,
+  },
+  {
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.29 (1).jpeg',
+    maxWidth: 325,
+    maxHeight: 380,
+  },
+  {
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.29.jpeg',
   },
 ];
 
@@ -72,14 +74,14 @@ const MemeCarousel = () => {
         >
           {memes.map((meme, index) => (
             <SwiperSlide key={index}>
-              <div className="py-8 bg-white rounded-3xl border-2 border-black mx-auto">
+              <div className="bg-white rounded-3xl border-2 border-black py-8">
                 <img
                   src={meme.url}
                   alt={`Meme ${index + 1}`}
                   style={{
-                    width: meme.width,
-                    height: meme.height,
-                    objectFit: 'cover',
+                    width: meme.maxWidth,
+                    height: meme.maxHeight,
+                    objectFit: 'contain',
                   }}
                 />
               </div>
