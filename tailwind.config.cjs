@@ -2,7 +2,19 @@ import plugin from 'tailwindcss/plugin';
 
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'], // Sesuaikan dengan lokasi file Anda
-  theme: {},
+  theme: {
+    extend: {
+      animation: {
+        'loop-scroll': 'loop-scroll 10s linear infinite',
+      },
+      keyframes: {
+        'loop-scroll': {
+          from: { transform: 'translateX(0%)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+      },
+    },
+  },
   plugins: [
     plugin(({ addUtilities }) => {
       addUtilities({

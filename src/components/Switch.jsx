@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Switch = ({ isChecked, onClick }) => {
   return (
     <StyledWrapper>
-      <div className="justify-items-end">
+      <div className="justify-items-end sm:hidden block">
         <input
           type="checkbox"
           id="checkbox"

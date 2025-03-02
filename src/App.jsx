@@ -3,12 +3,13 @@ import '@/App.css';
 import Buttons from './components/Buttons';
 import MemeCarousel from './components/MemeCarousel';
 import Switch from './components/Switch.jsx';
+import SectionRunning from './components/SectionRunning.jsx';
 
 const steps = [
-  'Go to <a href="https://access.redbelly.network/" class="text-red-500">https://access.redbelly.network/</a>',
-  'Connect Wallet',
-  'Complete identity verification (<span class="text-red-500">for questions, refer to the FAQ on Page</span>)',
-  'Once verified and wallet(s) linked, navigate to <a href="https://reddex.io" class="text-red-500">reddex.io</a>, the only decentralized exchange on Redbelly, to bridge funds and buy',
+  'Go to <a https://t.me/zoomies_bot" class="text-red-500">https://access.redbelly.network/</a>',
+  'Press /start to regist',
+  'Type /help to see all commands',
+  'Play games and check-in daily',
 ];
 
 export const App = () => {
@@ -21,13 +22,13 @@ export const App = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       {/* Header */}
-      <div className="w-full py-4 sm:py-6 px-6 sm:px-10 bg-white border-b-8 border-black fixed top-0 left-0 z-50">
-        <div className="container mx-auto flex justify-between items-center">
+      <div className="w-full py-2 sm:py-2 px-8 sm:px-20 bg-white border-b-8 border-black fixed top-0 left-0 z-50">
+        <div className="w-full flex justify-between items-center">
           {/* Logo */}
           <img
-            src="https://cdn.prod.website-files.com/677b6e588dbcb5516a62ce62/6784bc21b70916c654134c0c_Untitled_Artwork%202%201.webp"
+            src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/3 finish.png"
             alt="Logo"
-            width={48}
+            width={64}
           />
 
           {/* Navigasi (Desktop) */}
@@ -62,7 +63,9 @@ export const App = () => {
           <Buttons>Play</Buttons>
 
           {/* Tombol Hamburger (Mobile) */}
-          <Switch isChecked={isMenuOpen} onClick={toggleMenu} />
+          <div className="sm:hidden">
+            <Switch isChecked={isMenuOpen} onClick={toggleMenu} />
+          </div>
         </div>
       </div>
 
@@ -103,12 +106,12 @@ export const App = () => {
       </div>
 
       {/* Section 1 */}
-      <div className="container w-full flex items-center justify-center py-16 sm:py-32 px-5 sm:px-10 mt-24">
+      <div className="w-full flex items-center justify-center py-16 sm:py-24 px-5 sm:px-10 mt-28 sm:mt-32">
         <div className="grid md:grid-cols-2 gap-8 relative">
           {/* Kiri - Text dan Buttons */}
           <div className="flex flex-col gap-10 justify-center items-center">
             <div className="relative w-full max-w-2xl">
-              <h1 className="absolute inset-0 items-center justify-center text-center text-black text-4xl sm:text-5xl sm:mt-16">
+              <h1 className="absolute inset-0 items-center justify-center text-center text-black text-4xl sm:text-5xl sm:mt-24">
                 Bwahaha! You fools! You&apos;ve just activated my&nbsp;
                 <span className="text-purple-500 leading-none border-b-4 border-purple-500 inline-block">
                   ZOOMIES!
@@ -124,7 +127,7 @@ export const App = () => {
 
             {/* Buttons */}
             <div className="w-full flex flex-col gap-8 mt-28 sm:mt-5">
-              <button className="w-full flex flex-row gap-2 justify-center relative bg-[#31D5CD] text-black border border-black rounded-full text-3xl px-16 py-4 cursor-pointer shadow-[0_0_0_0_black] hover:-translate-y-3 hover:-translate-x-0.5 hover:shadow-[0px_25px_0_0_black] active:translate-y-0.5 active:translate-x-0.5 active:shadow-[0_0_0_0_black]">
+              <button className="w-full flex flex-row gap-2 justify-center relative bg-[#31D5CD] text-black border border-black rounded-full text-4xl px-16 py-4 cursor-pointer -translate-x-0.5 shadow-[0px_4px_0_0_black] hover:-translate-y-2 hover:-translate-x-0.5 hover:shadow-[5px_15px_0_0_black] active:translate-y-0.5 active:translate-x-0.5 active:shadow-[0_0_0_0_black]">
                 twitter
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +139,7 @@ export const App = () => {
                 </svg>
               </button>
 
-              <button className="w-full flex flex-row gap-2 justify-center bg-[#51B5FF] relative text-black border border-black rounded-full text-3xl px-16 py-4 cursor-pointer shadow-[0_0_0_0_black] hover:-translate-y-3 hover:-translate-x-0.5 hover:shadow-[0px_25px_0_0_black] active:translate-y-0.5 active:translate-x-0.5 active:shadow-[0_0_0_0_black]">
+              <button className="w-full flex flex-row gap-2 justify-center bg-[#51B5FF] relative text-black border border-black rounded-full text-4xl px-16 py-4 cursor-pointer -translate-x-0.5 shadow-[0px_4px_0_0_black] hover:-translate-y-2 hover:-translate-x-0.5 hover:shadow-[5px_15px_0_0_black] active:translate-y-0.5 active:translate-x-0.5 active:shadow-[0_0_0_0_black]">
                 telegram
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -157,18 +160,52 @@ export const App = () => {
             <img
               src="https://cdn.prod.website-files.com/677b6e588dbcb5516a62ce62/67808f0768804bf83ab8e4ff_Untitled_Artwork%204%201.webp"
               alt="SNEC Snake"
-              className="w-full"
+              className="w-[500px]"
             />
           </div>
         </div>
       </div>
 
+      {/* Section Running */}
+      <SectionRunning />
+
       {/* Section 2 */}
-      <div className="w-full flex items-center justify-center py-16 sm:py-32 px-5 sm:px-10">
-        <div className="flex flex-col max-w-4xl w-full">
+      <div className="w-full flex items-center justify-center py-16 sm:py-24 px-5 sm:px-10">
+        <div className="w-full flex flex-row justify-center max-w-7xl">
+          <img
+            src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/4 finish.png"
+            loading="lazy"
+            alt=""
+            className="w-[500px] justify-center hidden sm:block"
+          />
+          <div className="w-full max-w-md text-black text-4xl">
+            <div className="space-y-4">
+              <div className="flex items-center space-x-4">
+                <div className="w-10 h-10 bg-red-500 rounded-lg border-2 border-black -translate-x-0.5 shadow-[0px_2px_0_0_black]"></div>
+                <span>85% - Liquidity lock forever</span>
+              </div>
+              <div className="flex items-center space-x-4">
+                <div className="w-10 h-10 bg-teal-500 rounded-lg border-2 border-black -translate-x-0.5 shadow-[0px_2px_0_0_black]"></div>
+                <span>5% - Treasury</span>
+              </div>
+              <div className="flex items-center space-x-4">
+                <div className="w-10 h-10 bg-yellow-500 rounded-lg border-2 border-black -translate-x-0.5 shadow-[0px_2px_0_0_black]"></div>
+                <span>10% - Community Airdrop</span>
+              </div>
+            </div>
+            <div className="mt-6 text-left">
+              <span>Total Supply: 69,000,000,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Section 3 */}
+      <div className="w-full flex items-center justify-center py-16 sm:py-24 px-5 sm:px-10">
+        <div className="w-full flex flex-col max-w-7xl">
           {/* Teks di Atas */}
           <h1 className="text-center text-black text-4xl md:text-5xl">
-            Play Zoomies
+            ZOOMIES Games
           </h1>
 
           {/* Container untuk gambar dan tombol */}
@@ -178,7 +215,7 @@ export const App = () => {
               <img
                 src="https://cdn.prod.website-files.com/677b6e588dbcb5516a62ce62/67808f9896bac851af857c26_Group%2010%20(2)-p-500.webp"
                 alt="Snake Left"
-                className="w-48 sm:w-96 max-w-full"
+                className="w-48 sm:w-[1024px] max-w-full"
               />
             </div>
 
@@ -192,15 +229,15 @@ export const App = () => {
               <img
                 src="https://cdn.prod.website-files.com/677b6e588dbcb5516a62ce62/67808f9868804bf83ab96611_Group%209%20(2).webp"
                 alt="Snake Right"
-                className="w-48 sm:w-96 max-w-full"
+                className="w-48 sm:w-[1024px] max-w-full"
               />
             </div>
           </div>
         </div>
       </div>
 
-      {/* Section 3 */}
-      <div className="w-full bg-white flex flex-col items-center py-16 sm:py-32 px-5 sm:px-48">
+      {/* Section 4 */}
+      <div className="w-full bg-white flex flex-col items-center py-16 sm:py-24 px-5 sm:px-48">
         <h1 className="text-black text-4xl sm:text-5xl mb-16">
           How to Play Zoomies
         </h1>
@@ -228,49 +265,54 @@ export const App = () => {
         </div>
       </div>
 
-      {/* Section 4 */}
+      {/* Section Running */}
+      <SectionRunning />
+
+      {/* Section 5 */}
       <MemeCarousel></MemeCarousel>
 
       {/* footer */}
-      <footer className="py-16 flex flex-col sm:flex-row gap-10 justify-between items-center w-full border-y-4 border-black px-10">
-        {/* Bagian Kiri: Logo dan Tombol */}
-        <div className="flex flex-col items-center space-y-6">
-          <img
-            src="https://cdn.prod.website-files.com/677b6e588dbcb5516a62ce62/6784bc21b70916c654134c0c_Untitled_Artwork%202%201.webp"
-            alt="Logo"
-            className="w-20 h-auto"
-          />
-          <Buttons>Buy ZOOMIES!</Buttons>
-        </div>
+      <footer className="w-full border-y-4 border-black px-10 py-24">
+        <div className="w-full flex flex-col sm:flex-row gap-10 justify-between pb-24">
+          {/* Bagian Kiri: Logo dan Tombol */}
+          <div className="flex flex-col items-center space-y-6">
+            <img
+              src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/2 finish.png"
+              alt="Logo"
+              className="w-32 h-auto sm:self-start"
+            />
+            <Buttons>Buy ZOOMIES!</Buttons>
+          </div>
 
-        {/* Bagian Kanan: Navigasi */}
-        <div className="text-center sm:text-right">
-          <ul className="text-black text-4xl space-y-6">
-            <li>
-              <a
-                href="/"
-                className="underline transition-all active:brightness-90"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="underline transition-all active:brightness-90"
-              >
-                Tokenomics
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="underline transition-all active:brightness-90"
-              >
-                Memes
-              </a>
-            </li>
-          </ul>
+          {/* Bagian Kanan: Navigasi */}
+          <div className="text-center sm:text-left">
+            <ul className="text-black text-4xl space-y-6">
+              <li>
+                <a
+                  href="/"
+                  className="underline transition-all active:brightness-90"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  className="underline transition-all active:brightness-90"
+                >
+                  Tokenomics
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  className="underline transition-all active:brightness-90"
+                >
+                  Memes
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
       <div>
