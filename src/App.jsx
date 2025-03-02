@@ -233,7 +233,7 @@ export const App = () => {
           </h1>
 
           {/* Container untuk gambar dan tombol */}
-          <div className="relative flex flex-row justify-between items-center mt-10">
+          <div className="relative flex flex-row justify-around items-center mt-10">
             {/* Gambar Ular Kiri */}
             <div className="flex justify-center w-1/2 sm:w-auto">
               <img
