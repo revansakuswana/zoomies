@@ -17,7 +17,7 @@ const memes = [
   },
   {
     url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28 (2).jpeg',
-    maxWidth: 325,
+    maxWidth: 400,
     maxHeight: 380,
   },
   {
@@ -25,12 +25,12 @@ const memes = [
   },
   {
     url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28.jpeg',
-    maxWidth: 325,
+    maxWidth: 380,
     maxHeight: 380,
   },
   {
     url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.29 (1).jpeg',
-    maxWidth: 325,
+    maxWidth: 380,
     maxHeight: 380,
   },
   {

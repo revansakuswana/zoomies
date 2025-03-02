@@ -19,39 +19,46 @@ export const App = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
+  const handleNavClick = (event, href) => {
+    event.preventDefault();
+    setIsMenuOpen(false);
+
+    setTimeout(() => {
+      window.location.href = href;
+    }, 300);
+  };
   return (
     <div className="flex flex-col items-center justify-center">
       {/* Header */}
-      <div className="w-full py-2 sm:py-2 px-8 sm:px-20 bg-white border-b-8 border-black fixed top-0 left-0 z-50">
+      <div className="w-full py-2 sm:py-2 px-8 sm:px-20 bg-white border-b-8 border-black top-0 left-0 z-50 relative">
         <div className="w-full flex justify-between items-center">
           {/* Logo */}
-          <img
-            src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/2 finish.png"
-            alt="Logo"
-            width={64}
-          />
+          <a href="/">
+            <img
+              src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/2 finish.png"
+              alt="Logo"
+              width={64}
+            />
+          </a>
 
           {/* Navigasi (Desktop) */}
           <nav className="hidden sm:block space-x-8">
             <a
-              href="https://x.com/OGverse_"
-              target="_blank"
+              href="#about"
               rel="noopener noreferrer"
               className="text-black cursor-pointer sm:text-3xl hover-flip"
             >
               About
             </a>
             <a
-              href="https://t.me/ogversee"
-              target="_blank"
+              href="#tokenomics"
               rel="noopener noreferrer"
               className="text-black cursor-pointer sm:text-3xl hover-flip"
             >
               Tokenomics
             </a>
             <a
-              href="https://ogverse-docs.gitbook.io/ogverse-docs"
-              target="_blank"
+              href="#memes"
               rel="noopener noreferrer"
               className="text-black cursor-pointer sm:text-3xl hover-flip"
             >
@@ -60,7 +67,7 @@ export const App = () => {
           </nav>
 
           {/* Tombol Play */}
-          <Buttons href={'/play'}>Play</Buttons>
+          <Buttons href={'https://t.me/zoomies_bot'}>Play</Buttons>
 
           {/* Tombol Hamburger (Mobile) */}
           <div className="sm:hidden">
@@ -71,33 +78,33 @@ export const App = () => {
 
       {/* Navigasi (Mobile) */}
       <div
-        className={`sm:hidden fixed top-16 left-0 w-full h-full bg-white z-40 transition-transform duration-300 ease-in-out ${
-          isMenuOpen ? 'translate-y-0' : '-translate-y-full'
+        className={`bg-white sm:hidden absolute top-20 left-0 w-full h-full z-40 transition-transform duration-300 ease-in-out ${
+          isMenuOpen ? 'translate-y-6' : '-translate-y-full'
         }`}
       >
         <div className="container mx-auto py-10 px-4 text-center">
-          <nav className="flex flex-col space-y-10 mt-12">
+          <nav className="w-full flex flex-col space-y-10">
             <a
-              href="https://x.com/OGverse_"
-              target="_blank"
+              href="#about"
               rel="noopener noreferrer"
               className="text-black cursor-pointer text-3xl hover-flip"
+              onClick={(event) => handleNavClick(event, '#about')}
             >
               About
             </a>
             <a
-              href="https://t.me/ogversee"
-              target="_blank"
+              href="#tokenomics"
               rel="noopener noreferrer"
               className="text-black cursor-pointer text-3xl hover-flip"
+              onClick={(event) => handleNavClick(event, '#tokenomics')}
             >
               Tokenomics
             </a>
             <a
-              href="https://ogverse-docs.gitbook.io/ogverse-docs"
-              target="_blank"
+              href="#memes"
               rel="noopener noreferrer"
               className="text-black cursor-pointer text-3xl hover-flip"
+              onClick={(event) => handleNavClick(event, '#memes')}
             >
               Memes
             </a>
@@ -106,7 +113,7 @@ export const App = () => {
       </div>
 
       {/* Section 1 */}
-      <div className="w-full flex items-center justify-center py-16 sm:py-24 px-5 sm:px-10 mt-28 sm:mt-32">
+      <div className="w-full flex items-center justify-center py-16 sm:py-24 px-5 sm:px-10">
         <div className="grid md:grid-cols-2 gap-8 relative">
           {/* Kiri - Text dan Buttons */}
           <div className="flex flex-col gap-10 justify-center items-center">
@@ -175,29 +182,37 @@ export const App = () => {
       {/* Section 2 */}
       <div
         id="tokenomics"
-        className="w-full flex items-center justify-center py-16 sm:py-24 px-5 sm:px-10"
+        className="w-full flex flex-col items-center justify-between py-16 sm:py-24 px-5 sm:px-10"
       >
-        <div className="w-full flex flex-col sm:flex-row justify-center max-w-7xl">
+        <div>
+          <h1 className="text-black text-4xl sm:text-5xl text-center">
+            Tokenomics
+          </h1>
+        </div>
+        <div className="w-full flex flex-col sm:flex-row gap-5 justify-center max-w-7xl">
           <img
             src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/4 finish.png"
             loading="lazy"
             alt=""
             className="w-[500px] justify-center"
           />
-          <div className="w-full max-w-md text-black text-4xl">
+          <div className="w-full max-w-md text-black content-center text-4xl">
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
-                <span>● 85% - Liquidity lock forever</span>
+                <span>● 30% Pre-sale</span>
               </div>
               <div className="flex items-center space-x-4">
-                <span>● 5% - Treasury</span>
+                <span>● 40% Liquidity</span>
               </div>
               <div className="flex items-center space-x-4">
-                <span>● 10% - Community Airdrop</span>
+                <span>● 25% Game</span>
+              </div>
+              <div className="flex items-center space-x-4">
+                <span>● 5% Giveaway</span>
               </div>
             </div>
             <div className="mt-6 text-left">
-              <span>Total Supply: 69,000,000,000</span>
+              <span>Total supply 1,000,000,000 (1B) $ZOOMIES</span>
             </div>
           </div>
         </div>
@@ -230,7 +245,7 @@ export const App = () => {
 
             {/* Tombol Play di Tengah */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/4 z-10">
-              <Buttons>Play</Buttons>
+              <Buttons href={'https://t.me/zoomies_bot'}>Play</Buttons>
             </div>
 
             {/* Gambar Ular Kanan */}
