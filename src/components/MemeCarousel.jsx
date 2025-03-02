@@ -40,7 +40,7 @@ const memes = [
 
 const MemeCarousel = () => {
   return (
-    <div className="relative w-full py-10 sm:py-20 overflow-hidden">
+    <div id="memes" className="relative w-full py-10 sm:py-20 overflow-hidden">
       <h2 className="text-black text-center text-4xl sm:text-5xl mb-10 sm:mb-20">
         Memes
       </h2>

@@ -60,7 +60,7 @@ export const App = () => {
           </nav>
 
           {/* Tombol Play */}
-          <Buttons>Play</Buttons>
+          <Buttons href={'/play'}>Play</Buttons>
 
           {/* Tombol Hamburger (Mobile) */}
           <div className="sm:hidden">
@@ -173,7 +173,10 @@ export const App = () => {
       </div>
 
       {/* Section 2 */}
-      <div className="w-full flex items-center justify-center py-16 sm:py-24 px-5 sm:px-10">
+      <div
+        id="tokenomics"
+        className="w-full flex items-center justify-center py-16 sm:py-24 px-5 sm:px-10"
+      >
         <div className="w-full flex flex-col sm:flex-row justify-center max-w-7xl">
           <img
             src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/4 finish.png"
@@ -204,7 +207,10 @@ export const App = () => {
       <SectionRunning />
 
       {/* Section 3 */}
-      <div className="w-full flex items-center justify-center py-16 sm:py-24 px-5 sm:px-10">
+      <div
+        id="play"
+        className="w-full flex items-center justify-center py-16 sm:py-24 px-5 sm:px-10"
+      >
         <div className="w-full flex flex-col max-w-7xl">
           {/* Teks di Atas */}
           <h1 className="text-center text-black text-4xl sm:text-5xl">
@@ -274,8 +280,11 @@ export const App = () => {
       {/* Section 5 */}
       <MemeCarousel></MemeCarousel>
 
-      {/* Section 5 */}
-      <div className="w-full flex items-center justify-center py-16 sm:py-24 px-5 sm:px-10">
+      {/* Section 6 */}
+      <div
+        id="about"
+        className="w-full flex items-center justify-center py-16 sm:py-24 px-5 sm:px-10"
+      >
         <div className="w-full flex flex-col justify-center max-w-7xl">
           <h1 className="text-black text-4xl sm:text-5xl text-center mb-16">
             About
@@ -287,6 +296,7 @@ export const App = () => {
           </h1>
         </div>
       </div>
+
       {/* footer */}
       <footer className="w-full border-y-4 border-black px-10 py-24">
         <div className="w-full flex flex-col sm:flex-row gap-10 justify-between pb-24">
@@ -307,7 +317,7 @@ export const App = () => {
             <ul className="text-black text-4xl space-y-6">
               <li>
                 <a
-                  href="/"
+                  href="#about"
                   className="underline transition-all active:brightness-90"
                 >
                   About
@@ -315,7 +325,7 @@ export const App = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="#tokenomics"
                   className="underline transition-all active:brightness-90"
                 >
                   Tokenomics
@@ -323,7 +333,7 @@ export const App = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="#memes"
                   className="underline transition-all active:brightness-90"
                 >
                   Memes
