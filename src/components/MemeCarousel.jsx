@@ -10,31 +10,31 @@ import {
 
 const memes = [
   {
-    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.27.jpeg',
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/meme_1.jpeg',
   },
   {
-    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28 (1).jpeg',
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/meme_2.jpeg',
   },
   {
-    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28 (2).jpeg',
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/meme_3.jpeg',
     maxWidth: 400,
     maxHeight: 380,
   },
   {
-    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28 (3).jpeg',
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/meme_4.jpeg',
   },
   {
-    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28.jpeg',
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/meme_5.jpeg',
     maxWidth: 380,
     maxHeight: 380,
   },
   {
-    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.29 (1).jpeg',
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/meme_6.jpeg',
     maxWidth: 380,
     maxHeight: 380,
   },
   {
-    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.29.jpeg',
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/meme_7.jpeg',
   },
 ];
 
