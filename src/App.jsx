@@ -27,7 +27,7 @@ export const App = () => {
       window.location.href = href;
     }, 300);
   };
-  
+
   return (
     <div className="flex flex-col items-center justify-center">
       {/* Header */}
@@ -36,7 +36,7 @@ export const App = () => {
           {/* Logo */}
           <a href="/">
             <img
-              src="https://.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/finish-2.png"
+              src="https://.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/2_finish.png"
               alt="Logo"
               width={64}
             />
