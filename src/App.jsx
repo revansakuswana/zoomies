@@ -36,7 +36,7 @@ export const App = () => {
           {/* Logo */}
           <a href="/">
             <img
-              src="https://.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/2_finish.png"
+              src="https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/2_finish.png"
               alt="Logo"
               width={64}
             />
