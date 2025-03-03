@@ -35,7 +35,7 @@ export const App = () => {
           {/* Logo */}
           <a href="/">
             <img
-              src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/2 finish.png"
+              src="https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/2 finish.png"
               alt="Logo"
               width={64}
             />
@@ -171,7 +171,7 @@ export const App = () => {
           {/* Kanan - Gambar Ular */}
           <div className="flex justify-center items-center">
             <img
-              src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/3 finish.png"
+              src="https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/3 finish.png"
               alt="SNEC Snake"
               className="w-[500px]"
             />
@@ -191,7 +191,7 @@ export const App = () => {
         </div>
         <div className="w-full flex flex-col sm:flex-row gap-5 justify-center max-w-7xl">
           <img
-            src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/4 finish.png"
+            src="https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/4 finish.png"
             loading="lazy"
             alt=""
             className="w-[500px] justify-center"
@@ -237,7 +237,7 @@ export const App = () => {
             {/* Gambar Ular Kiri */}
             <div className="flex justify-center w-1/2 sm:w-auto">
               <img
-                src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/1finish.png"
+                src="https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/1finish.png"
                 alt="Snake Left"
                 className="w-48 sm:w-[300px] max-w-full"
               />
@@ -251,7 +251,7 @@ export const App = () => {
             {/* Gambar Ular Kanan */}
             <div className="flex justify-center w-1/2 sm:w-auto">
               <img
-                src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/1finish.png"
+                src="https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/1finish.png"
                 alt="Snake Right"
                 className="w-48 sm:w-[300px] max-w-full scale-x-[-1]"
               />
@@ -318,7 +318,7 @@ export const App = () => {
           {/* Bagian Kiri: Logo dan Tombol */}
           <div className="flex flex-col items-center space-y-6">
             <img
-              src="https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/3 finish.png"
+              src="https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/3 finish.png"
               alt="Logo"
               className="w-32 h-auto sm:self-start"
             />

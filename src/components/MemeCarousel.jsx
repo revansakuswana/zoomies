@@ -10,31 +10,31 @@ import {
 
 const memes = [
   {
-    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.27.jpeg',
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.27.jpeg',
   },
   {
-    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28 (1).jpeg',
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28 (1).jpeg',
   },
   {
-    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28 (2).jpeg',
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28 (2).jpeg',
     maxWidth: 400,
     maxHeight: 380,
   },
   {
-    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28 (3).jpeg',
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28 (3).jpeg',
   },
   {
-    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28.jpeg',
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.28.jpeg',
     maxWidth: 380,
     maxHeight: 380,
   },
   {
-    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.29 (1).jpeg',
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.29 (1).jpeg',
     maxWidth: 380,
     maxHeight: 380,
   },
   {
-    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/Zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.29.jpeg',
+    url: 'https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/WhatsApp Image 2025-03-02 at 15.40.29.jpeg',
   },
 ];
 
