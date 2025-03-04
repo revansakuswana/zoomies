@@ -180,29 +180,32 @@ export const App = () => {
         </div>
       </div>
 
+      {/* Section Running */}
+      <SectionRunning />
+
       {/* Section 2 */}
       <div
         id="tokenomics"
         className="w-full flex flex-col items-center justify-between py-16 sm:py-24 px-5 sm:px-10"
       >
-        <div>
+        {/* <div>
           <h1 className="text-black text-4xl sm:text-5xl text-center">
             Tokenomics
           </h1>
-        </div>
+        </div> */}
         <div className="w-full flex flex-col sm:flex-row gap-5 justify-center max-w-7xl">
           <img
             src="https://cdn.jsdelivr.net/gh/revansakuswana/zoomies@main/src/assets/images/4_finish.png"
             loading="lazy"
             alt=""
-            className="w-[500px] justify-center"
+            className="w-[500px]"
           />
-          <div className="w-full max-w-md text-black content-center text-4xl">
+          <div className="w-full max-w-md text-black content-center">
             <div className="space-y-4">
-              <div className="flex items-center space-x-4">
-                <span>● 30% Pre-sale</span>
+              <div className="flex text-5xl justify-center">
+                <h1>Rly.fun or Rakoon.fun?!</h1>
               </div>
-              <div className="flex items-center space-x-4">
+              {/* <div className="flex items-center space-x-4">
                 <span>● 40% Liquidity</span>
               </div>
               <div className="flex items-center space-x-4">
@@ -210,11 +213,11 @@ export const App = () => {
               </div>
               <div className="flex items-center space-x-4">
                 <span>● 5% Giveaway</span>
-              </div>
+              </div> */}
             </div>
-            <div className="mt-6 text-left">
+            {/* <div className="mt-6 text-left">
               <span>Total supply 1,000,000,000 (1B) $ZOOMIES</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -294,7 +297,7 @@ export const App = () => {
       <SectionRunning />
 
       {/* Section 5 */}
-      <MemeCarousel></MemeCarousel>
+      <MemeCarousel />
 
       {/* Section 6 */}
       <div
@@ -323,9 +326,7 @@ export const App = () => {
               alt="Logo"
               className="w-32 h-auto sm:self-start"
             />
-            <Buttons href="https://t.me/radixzoomies/91/93">
-              Buy ZOOMIES!
-            </Buttons>
+            <Buttons href="#tokenomics">Buy ZOOMIES!</Buttons>
           </div>
 
           {/* Bagian Kanan: Navigasi */}
