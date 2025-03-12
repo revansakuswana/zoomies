@@ -203,7 +203,7 @@ export const App = () => {
           <div className="w-full max-w-md text-black content-center">
             <div className="space-y-4">
               <div className="flex text-5xl justify-center">
-                <h1>Rly.fun or Rakoon.fun?!</h1>
+                <h1>ZOOMIES on Rakoon.fun</h1>
               </div>
               {/* <div className="flex items-center space-x-4">
                 <span>● 40% Liquidity</span>
@@ -326,7 +326,9 @@ export const App = () => {
               alt="Logo"
               className="w-32 h-auto sm:self-start"
             />
-            <Buttons href="#tokenomics">Buy ZOOMIES!</Buttons>
+            <Buttons href="https://rakoon.fun/token/resource_rdx1tkfga72frk45fzp8mhvu85ly0xu64jq27jj82xk60lvekx6pqjg7rm">
+              Buy ZOOMIES!
+            </Buttons>
           </div>
 
           {/* Bagian Kanan: Navigasi */}
