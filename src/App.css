@@ -16,13 +16,6 @@ body {
   color: white;
 }
 
-h1,
-h2,
-h3,
-a {
-  font-family: 'Just Me Again Down Here', serif;
-}
-
 .hover-flip {
   display: inline-block; /* Agar transformasi bekerja dengan baik */
 }
